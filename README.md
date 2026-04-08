@@ -1,6 +1,6 @@
 # Ethercat-softdrone-demo 🛸
 
-这是一个集成了 **EtherCAT 实时驱动** 与 **MATLAB Simulink 姿态控制** 的全栈无人机控制系统。
+这是一个基于N355电脑集成了 **EtherCAT 实时驱动** 与 **MATLAB Simulink 姿态控制** 的全栈无人机控制系统。
 
 ---
 
