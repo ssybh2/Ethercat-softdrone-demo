@@ -34,15 +34,16 @@
 
 ####  Linux 终端配置
 在运行驱动程序的终端窗口中执行以下命令：
-
+1. 配置Linux终端环境
 ```bash
-# 1. 设置 Domain ID 
-export ROS_DOMAIN_ID=24 
-# （验证方法：输入 “echo $ROS_DOMAIN_ID” 输出 24 则正确）
+export ROS_DOMAIN_ID=24
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+```
 
-# 2. 指定 RMW 实现 
-export RMW_IMPLEMENTATION=rmw_fastrtps_cpp 
-# （验证方法：输入 “echo $RMW_IMPLEMENTATION” 输出 rmw_fastrtps_cpp 则正确）
+2. 验证设置是否生效
+ ```bash
+echo $ROS_DOMAIN_ID        预期返回: 24
+echo $RMW_IMPLEMENTATION   预期返回：rmw_fastrtps_cpp
 ```
 #### Matlab command window 配置 
 （使用sudo su root 权限启动 matlab）
